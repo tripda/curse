@@ -1,6 +1,8 @@
 {
     "name": "tripda/curse",
-    "description": "RingCaptcha SDK created by Tripda IT Team",
+    "description": "A PostgreSQL cursor reader",
+    "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Tripda IT Team"
