@@ -1,4 +1,5 @@
 # Curse - Cursor reader for cursed PostgreSQL's functions
+[![Build Status](https://travis-ci.org/TripdaApp/curse.svg?branch=master)](https://travis-ci.org/TripdaApp/curse)
 
 If you have large result sets returned by a PostgreSQL's function maybe is time to return a cursor and try this tiny library to help you out.
 

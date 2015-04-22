@@ -1,4 +1,12 @@
 {
+    "name": "tripda/curse",
+    "description": "RingCaptcha SDK created by Tripda IT Team",
+    "authors": [
+        {
+            "name": "Tripda IT Team"
+        }
+    ],
+    "minimum-stability": "stable",
     "require-dev": {
         "phpunit/phpunit": "@stable"
     },
