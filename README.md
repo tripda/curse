@@ -29,3 +29,5 @@ $cursorReader->close();
 ```
 
 ```SequentialCursorReader``` will not rewind or store results it will just go on forward until it returns null (I know this is not good) to signal that there are no more rows to read.
+
+Since it uses its own connection ```close``` and ```__destruct``` will "close" (commit the transaction and close the connection) to avoid a high number of connections in your database.
