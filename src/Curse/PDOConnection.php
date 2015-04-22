@@ -29,12 +29,7 @@ class PDOConnection implements ConnectionInterface
 
     public function executeQuery($statement, array $parameters)
     {
-        if (false === isset($this->executedStatements[$statement])) {
-            $preparedStatement = $this->pdo->prepare($statement);
-            $this->cacheStatement($statement, $preparedStatement);
-        } else {
-            $preparedStatement = $this->executedStatements[$statement];
-        }
+        $preparedStatement = $this->pdo->prepare($statement);
 
         $preparedStatement->execute($parameters);
 
